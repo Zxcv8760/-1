@@ -12,7 +12,7 @@ let handler = async (m, {
     text,
     command
 }) => {
-    if (!text) throw "هذا الامر خاص بعمل شعارات باسمك \nمثال:\n*.تصميم3* mego bot"
+    if (!text) throw "هذا الامر خاص بعمل شعارات باسمك \nمثال:\n*.تصميم3* safrot bot"
     try {
             await m.reply(wait)
             let res = await BrandCrowd(text)
