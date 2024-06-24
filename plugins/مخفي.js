@@ -1,4 +1,3 @@
-//بمزح بمزح لعيونكم 😂😂🫶
 //مقدمه من قناه Zoro Codes ' https://whatsapp.com/channel/0029VaYMyqu4CrfgGRLXfv3c '
 import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 import uploadFile from '../lib/uploadFile.js'
