@@ -9,7 +9,7 @@ import os from 'os';
 const streamPipeline = promisify(pipeline);
 
 var handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `*${usedPrefix}${command} اية الكرسي*`;
+  if (!text) throw `*${usedPrefix}${command} اكتب اسم الي عايز تشغلو🧸💜*`;
 
   let search = await yts(text);
   let vid = search.videos[Math.floor(Math.random() * search.videos.length)];
