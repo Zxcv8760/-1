@@ -1,7 +1,7 @@
 /*
 
 - Agradecimiento a la comunidad de "WSApp • Developers"
- * https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h
+ * 
 - Agradecimiento especial a Carlos (PT) por los codigos de interactiveMessage (botones)
 - Agradecimiento a Darlyn1234 por la estructura de uso en este codigo y quoted
  * https://github.com/darlyn1234
@@ -188,4 +188,4 @@ export default handler;
 async function isValidYouTubeLink(link) {
     const validPatterns = [/youtube\.com\/watch\?v=/i, /youtube\.com\/shorts\//i, /youtu\.be\//i, /youtube\.com\/embed\//i, /youtube\.com\/v\//i, /youtube\.com\/attribution_link\?a=/i, /yt\.be\//i, /googlevideo\.com\//i, /youtube\.com\.br\//i, /youtube-nocookie\.com\//i, /youtubeeducation\.com\//i, /m\.youtube\.com\//i, /youtubei\.googleapis\.com\//i];
     return validPatterns.some(pattern => pattern.test(link));
-                      }
+}
