@@ -21,10 +21,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                         highlight_label: 'yas',
                         rows: [
                           {
-                            header: 'قسم الاوامر🤺🕊',
+                            header: '*◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝_*',
                             title: '',
                             description: '',
-                            id: '.اوامر'
+                            id: '.قسم الادمن'
                           },
                           {
                             header: 'رقم المطور🤺🕊',
