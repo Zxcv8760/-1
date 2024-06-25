@@ -38,6 +38,48 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                             description: '',
                             id: '.هات'
                           },
+                          {
+                            header: 'سفروت🤺🕊',
+                            title: '',
+                            description: '',
+                            id: '.هات'
+                          },
+                          {
+                            header: 'سفروت🤺🕊',
+                            title: '',
+                            description: '',
+                            id: '.هات'
+                          }, 
+                          {
+                            header: 'سفروت🤺🕊',
+                            title: '',
+                            description: '',
+                            id: '.هات'
+                          },
+                            {
+                            header: 'سفروت🤺🕊',
+                            title: '',
+                            description: '',
+                            id: '.هات'
+                          },
+                            {
+                            header: 'سفروت🤺🕊',
+                            title: '',
+                            description: '',
+                            id: '.هات'
+                          },
+                            {
+                            header: 'سفروت🤺🕊',
+                            title: '',
+                            description: '',
+                            id: '.هات'
+                          },
+                            {
+                            header: 'سفروت🤺🕊',
+                            title: '',
+                            description: '',
+                            id: '.هات'
+                          },
                         ]
                       }
                     ]
