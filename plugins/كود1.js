@@ -7,14 +7,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
               title: '*♯ЅᗩFᏒOT꙯ 🧚‍♂️📌*'
             },
             body: {
-              text: 'طول مانت قلبك ابيض عشتك هتبقا سوده🧸🖤'
+              text: 'نورت قسم الاوامر بلازرار🕊💜'
             },
             nativeFlowMessage: {
               buttons: [
                 {
                   name: 'single_select',
                   buttonParamsJson: JSON.stringify({
-                    title: '💜🧸',
+                    title: 'تحديد🧸🕊',
                     sections: [
                       {
                         title: 'List',
@@ -97,6 +97,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['سفروت']
+handler.command = ['no']
 
 export default handler
