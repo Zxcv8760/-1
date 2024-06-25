@@ -11,7 +11,7 @@ let handler = async (m, {
         text = args.slice(0).join(" ")
     } else if (m.quoted && m.quoted.text) {
         text = m.quoted.text
-    } else throw "اتفضل:\n*.ji1z* علشان ارد علي اي سوال بلذكاء الصطناعي نقطه سفروت وكتب سوالك"
+    } else throw "💜🧸:\n*.علشان ارد علي اي سوال بلذكاء الصطناعي نقطه سفروت وكتب سوالك"
     await m.reply(wait)
     const messages = [
     { role: 'system', content: 'You are a helpful assistant.' },
