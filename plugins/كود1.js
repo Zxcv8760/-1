@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                 {
                   name: 'single_select',
                   buttonParamsJson: JSON.stringify({
-                    title: 'تحديد🧸🕊',
+                    title: '*_✓◡̈⃝✨✘ ━━│ قائـمـة 📰 الاوامـر│━━✘◡̈⃝🫣✨_*',
                     sections: [
                       {
                         title: 'List',
@@ -27,10 +27,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                             id: '.قسم1'
                           },
                           {
-                            header: 'رقم المطور🤺🕊',
+                            header: ' *🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎_*',
                             title: '',
                             description: '',
-                            id: '.المطور'
+                            id: '.قسم2'
                           },
                           {
                             header: 'سفروت🤺🕊',
