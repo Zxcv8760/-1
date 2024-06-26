@@ -58,7 +58,7 @@ let str = `
 ┃⋄ .◡̈⃝ ✓│.ستيك🏃‍♂️♻️
 ┃━━━━━━━━━━⬣
 ‬`.trim();
-
+conn.sendMessage(m.chat, (audio: { url: 'https://files.catbox.moe/r7a93j.wav'), mimetype:'audio/mpeg', ptt:true}, {quoted:m})
 conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
