@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import { sticker, addExif } from '../lib/sticker.js'
 import { Sticker } from 'wa-sticker-formatter'
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
-if (!text) throw `*تحويل كلمة او نص لملصق*\n\n*—◉ مثال:*\n*◉ ${usedPrefix + command} Bobiza-Bot*`
+if (!text) throw `*تحويل كلمة او نص لملصق*\n\n*—◉ مثال:*\n*◉ ${usedPrefix + command} سفروت🤺🔥*`
 let teks = encodeURI(text)
 
 if (command == 'attp') {
@@ -32,7 +32,7 @@ if (command == 'ttp') {
 conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
     
 }
-handler.command = handler.help = ['attp']
+handler.command = handler.help = ['ستيك']
 handler.tags = ['sticker']
 export default handler
 
