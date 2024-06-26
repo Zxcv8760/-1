@@ -13,8 +13,8 @@ global.owner = [
 ];
 
 global.xaxa = 'kana'
-global.suittag = ['22247072475', '22247072475'];
-global.prems = ['22247072475', '22247072475'];
+global.suittag = ['201115618853', '201115618853'];
+global.prems = ['201115618853', '201115618853'];
 
 global.packname = 'Nezuko🧸 ';
 global.author = 'سفروت بوت🧸💜';
