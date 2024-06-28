@@ -23,7 +23,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                           {
                             header: '◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝',
                             title: '',
-                            description: '',
+                            description: 'قسم الادمن',
                             id: '.قسم1'
                           },
                           {
