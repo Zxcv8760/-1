@@ -67,7 +67,7 @@ conn.sendMessage(m.chat, {
 }; 
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = /^(قسم6)$/i
+handler.command = /^(سفروت6)$/i
 
 export default handler
 function clockString(ms) {
