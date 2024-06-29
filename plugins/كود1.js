@@ -2,6 +2,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     conn.relayMessage(m.chat, {
       viewOnceMessage: {
         message: {
+      let videoUrl = 'https://telegra.ph/file/73ef7488ba7f7f3e613ee.mp4';{
           interactiveMessage: {
             header: {
               title: '*♯ЅᗩFᏒOT꙯ 🧚‍♂️📌*'
