@@ -27,13 +27,13 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  		sections: [
   						  			{
   						  				title: 'List',
-  							  	    highlight_label: 'ON',
+  							  	    highlight_label: 'yas',
   						  		    rows: [
   						  		    	{
   						  		    		header: '◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝',
   										      title: 'Click Me',
   									    	  description: 'Click Me',
-  								    		  id: 'سفروت1'
+  								    		  id: '.سفروت1'
   						  		    	}
   						  		    ]
   						  			},
