@@ -1,4 +1,4 @@
-/Copyright ©JOANIMI/KILLUA
+//Copyright ©JOANIMI/KILLUA
 //https://whatsapp.com/channel/0029Vab5oDNElagpHtJjmT0B
 
 import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from '@whiskeysockets/baileys'
@@ -27,101 +27,112 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  		sections: [
   						  			{
   						  				title: 'List',
-  							  	    highlight_label: 'yas',
+  							  	    highlight_label: 'ON',
   						  		    rows: [
   						  		    	{
   						  		    		header: '◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝',
-  										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  										      title: 'Click Me',
+  									    	  description: 'Click Me',
   								    		  id: '.سفروت1'
   						  		    	}
   						  		    ]
   						  			},
   						  			{
-  						  				highlight_label: 'yas',
+  						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
   						  		    		header: '🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎',
-  										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  										      title: 'Click Me',
+  									    	  description: 'Click Me',
   								    		  id: '.سفروت2'
   						  		    	}
   						  				]
   						        	},
   						  			{
-  						  				highlight_label: 'yas',
+  						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
   						  		    		header: '🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿',
   										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  									    	  description: 'ما',
   								    		  id: '.سفروت3'
   						  		    	}
   						  				]
                                     },
   						  			{
-  						  				highlight_label: 'yas',
+  						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
   						  		    		header: '◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝',
   										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  									    	  description: 'مارو1',
   								    		  id: '.سفروت4'
   						  		    	}
   						  				]
                                         },
   						  			{
-  						  				highlight_label: 'yas',
+  						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
   						  		    		header: '⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️',
   										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  									    	  description: 'مارو1',
   								    		  id: '.سفروت5'
   						  		    	}
   						  				]
                                         },
   						  			{
-  						  				highlight_label: 'yas',
+  						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
   						  		    		header: '🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃',
   										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  									    	  description: 'مارو1',
   								    		  id: '.سفروت6'
   						  		    	}
   						  				]
                                         },
   						  			{
-  						  				highlight_label: 'yas',
+  						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
   						  		    		header: '◡̈⃝💆🏻❏━━│قسم الايدت│━━❏◡̈⃝💆🏻',
   										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  									    	  description: 'مارو1',
   								    		  id: '.سفروت7'
   						  		    	}
   						  				]
                                         },
   						  			{
-  						  				highlight_label: 'yas',
+  						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
   						  		    		header: '🏦❏━━│قسم البنك│━━❏◡̈⃝🏦',
   										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  									    	  description: 'مارو1',
   								    		  id: '.سفروت8'
   						  		    	}
   						  				]
                                         },
   						  			{
-  						  				highlight_label: 'yas',
+  						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
   						  		    		header: '◡̈⃝🤴🏻❏━━│قسم المطوࢪ│━━❏◡̈⃝🧏🏻',
   										      title: '',
-  									    	  description: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩◡̈⃝',
+  									    	  description: 'مارو1',
   								    		  id: '.سفروت9'
+  						  		    	}
+  						  				]
+                                        },
+  						  			{
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
+  										      title: '',
+  									    	  description: 'مارو1',
+  								    		  id: '.المطور'
   						  		    	}
   						  				]
   						  			}
