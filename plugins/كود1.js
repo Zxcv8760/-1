@@ -1,8 +1,5 @@
-if (device !== 'desktop' || device !== 'web') {      
-var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/73ef7488ba7f7f3e613ee.mp4'}}, } upload: conn.waUploadToServer {(
-const interactiveMessage = )
 let handler = async (m, { conn, args, usedPrefix, command }) => {      
-    conn.relayMessage(m.chat, {
+ var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/73ef7488ba7f7f3e613ee.mp4'}},  conn.relayMessage(m.chat, {
       viewOnceMessage: {
         message: {
           interactiveMessage: {
