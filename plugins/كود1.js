@@ -7,7 +7,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
               title: '*♯ЅᗩFᏒOT꙯ 🧚‍♂️📌*'
             },
             body: {
-              text: 'نورت قسم الاوامر بلازرار🕊💜'
+              text: 'نورت قسم الاوامر بلازرار🕊💜'/n┇≡ *◡̈⃝🧸📌 ⁩ تفضل القائمة يا*  : *${taguser}*
             },
             nativeFlowMessage: {
               buttons: [
