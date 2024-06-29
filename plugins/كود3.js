@@ -30,10 +30,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   							  	    highlight_label: 'ON',
   						  		    rows: [
   						  		    	{
-  						  		    		header: 'Test',
+  						  		    		header: '◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝',',
   										      title: 'Click Me',
   									    	  description: 'Click Me',
-  								    		  id: 'test'
+  								    		  id: 'سفروت1'
   						  		    	}
   						  		    ]
   						  			},
