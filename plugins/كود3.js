@@ -69,6 +69,18 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   								    		  id: 'te'
   						  		    	}
   						  				]
+                                }
+                                    },
+  						  			{
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'مارو1',
+  								    		  id: 'te'
+  						  		    	}
+  						  				]
             }
   						  		]
   						  	})
