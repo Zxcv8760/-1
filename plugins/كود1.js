@@ -34,8 +34,7 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
-let str = ` 
-let handler = async (m, { conn, args, usedPrefix, command }) => {      
+let str = `       
     conn.relayMessage(m.chat, {
       viewOnceMessage: {
         message: {
