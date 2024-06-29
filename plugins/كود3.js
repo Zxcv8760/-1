@@ -8,13 +8,13 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     const mentionId = m.key.participant || m.key.remoteJid;
 
     if (device !== 'desktop' || device !== 'web') {      
-        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/2784677013ba9efe6cc03.jpg'}}, { upload: conn.waUploadToServer })
+        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/b63528315a84c3205ed98.jpg'}}, { upload: conn.waUploadToServer })
         const interactiveMessage = {
             body: { text: `test`.trim() },
-            footer: { text: `©JoAnimi for test`.trim() },  
+            footer: { text: `𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩`.trim() },  
             header: {
-                title: `test hi @${mentionId.split('@')[0]}`,
-                subtitle: `test`,
+                title: `*┃━━━━━⬣♯ЅᗩFᏒOT꙯⬣━━━━━┃*\n\n*◞❐نورت بوت سفروت🤺🔥*\n\n*◞❐ تفضل القائمة يا  :* @${mentionId.split('@')[0]}`,
+                subtitle: ``,
                 hasMediaAttachment: true,
                 imageMessage: joanimiimg.imageMessage,
             },
@@ -23,7 +23,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   							{
   								name: 'single_select',
   						  	buttonParamsJson: JSON.stringify({
-  						  		title: 'Click Me',
+  						  		title: '⌝قـائـمـه الاوامـر⌞',
   						  		sections: [
   						  			{
   						  				title: 'List',
@@ -52,13 +52,24 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'Test',
-  										      title: 'Click Me',
-  									    	  description: 'Click Me',
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'مارو1',
   								    		  id: 'te'
   						  		    	}
   						  				]
-  						  			}
+                                    },
+  						  			{
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'مارو1',
+  								    		  id: 'te'
+  						  		    	}
+  						  				]
+            }
   						  		]
   						  	})
   							},
@@ -72,8 +83,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                               {
                                   name: 'cta_url',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: 'url',
-                                      url: 'https://www.google.com',
+                                      display_text: 'منصاتي🔥🤺',
+                                      url: 'https://www.atom.bio/safrotbob-376',
                                       merchant_url: ''
                                   })
                               },
@@ -84,40 +95,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                       id: 'message'
                                   })
                               },
-                              {
-                                  name: 'cta_copy',
-                                  buttonParamsJson: JSON.stringify({
-                                      display_text: 'copy',
-                                      id: '123456789',
-                                      copy_code: 'message'
-                                  })
-                              },
-                              {
-                                  name: 'cta_reminder',
-                                  buttonParamsJson: JSON.stringify({
-                                      display_text: 'cta_reminder',
-                                      id: 'message'
-                                  })
-                              },
-                              {
-                                  name: 'cta_cancel_reminder',
-                                  buttonParamsJson: JSON.stringify({
-                                      display_text: 'cta_cancel_reminder',
-                                      id: 'message'
-                                  })
-                              },
-                              {
-                                  name: 'address_message',
-                                  buttonParamsJson: JSON.stringify({
-                                      display_text: 'address_message',
-                                      id: 'message'
-                                  })
-                              },
-                              {
-                                  name: 'send_location',
-                                  buttonParamsJson: JSON.stringify({
-                                  })
-                              }
+                              
   			  		],
                 messageParamsJson: ''
             }
@@ -139,5 +117,5 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
 };
 handler.help = ['imgboton'];
 handler.tags = ['For Test'];
-handler.command = /^(imgboton)$/i;
+handler.command = /^(اوامر|الاوامر|أوامر|الأوامر|menu)$/i;
 export default handler;
