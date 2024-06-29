@@ -13,7 +13,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
             body: { text: `test`.trim() },
             footer: { text: `𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩`.trim() },  
             header: {
-                title: `*┃━━━━━⬣♯ЅᗩFᏒOT꙯⬣━━━━━┃*\n\n*◞❐نورت بوت سفروت🤺🔥*\n\n*◞❐ تفضل القائمة يا  :* @${mentionId.split('@')[0]}`,
+                title: `*┃━━━━━⬣♯ЅᗩFᏒOT꙯-𝙱𝙾𝚃⬣━━━━━┃*\n\n*◞❐نورت يا حب بوت سفروت🤺🔥*\n\n*◞❐ تفضل القائمة يا  :* @${mentionId.split('@')[0]}`,
                 subtitle: ``,
                 hasMediaAttachment: true,
                 imageMessage: joanimiimg.imageMessage,
@@ -58,8 +58,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   								    		  id: 'te'
   						  		    	}
   						  				]
-                                    },
-  						  			{
+                                        {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
@@ -69,9 +68,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   								    		  id: 'te'
   						  		    	}
   						  				]
-                                }
-                                    },
-  						  			{
+                                        {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
@@ -81,7 +78,57 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   								    		  id: 'te'
   						  		    	}
   						  				]
-            }
+                                        {
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'مارو1',
+  								    		  id: 'te'
+  						  		    	}
+  						  				]
+                                        {
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'مارو1',
+  								    		  id: 'te'
+  						  		    	}
+  						  				]
+                                        {
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'مارو1',
+  								    		  id: 'te'
+  						  		    	}
+  						  				]
+                                        {
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'مارو1',
+  								    		  id: 'te'
+  						  		    	}
+  						  				]
+                                        {
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'مارو1',
+  								    		  id: 'te'
+  						  		    	}
+  						  				]
+  						  			}
   						  		]
   						  	})
   							},
@@ -95,8 +142,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                               {
                                   name: 'cta_url',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: 'منصاتي🔥🤺',
-                                      url: 'https://www.atom.bio/safrotbob-376',
+                                      display_text: '⌝كـل الـلـي يـخـصـنـي⌞',
+                                      url: 'https://www.atom.bio/m_vro1',
                                       merchant_url: ''
                                   })
                               },
