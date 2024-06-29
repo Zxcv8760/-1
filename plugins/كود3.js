@@ -47,7 +47,18 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   								    		  id: 'tes'
   						  		    	}
   						  				]
-  						  			},
+  						        	},
+  						  			{
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'قسم الادمن',
+  										      title: '',
+  									    	  description: 'ما',
+  								    		  id: 'سفروت1'
+  						  		    	}
+  						  				]
+                                    },
   						  			{
   						  				highlight_label: 'ON',
   						  				rows: [
@@ -55,77 +66,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  		    		header: 'قسم الادمن',
   										      title: '',
   									    	  description: 'مارو1',
-  								    		  id: 'te'
-  						  		    	}
-  						  				]
-                                        {
-  						  				highlight_label: 'ON',
-  						  				rows: [
-  						  					{
-  						  		    		header: 'قسم الادمن',
-  										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'te'
-  						  		    	}
-  						  				]
-                                        {
-  						  				highlight_label: 'ON',
-  						  				rows: [
-  						  					{
-  						  		    		header: 'قسم الادمن',
-  										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'te'
-  						  		    	}
-  						  				]
-                                        {
-  						  				highlight_label: 'ON',
-  						  				rows: [
-  						  					{
-  						  		    		header: 'قسم الادمن',
-  										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'te'
-  						  		    	}
-  						  				]
-                                        {
-  						  				highlight_label: 'ON',
-  						  				rows: [
-  						  					{
-  						  		    		header: 'قسم الادمن',
-  										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'te'
-  						  		    	}
-  						  				]
-                                        {
-  						  				highlight_label: 'ON',
-  						  				rows: [
-  						  					{
-  						  		    		header: 'قسم الادمن',
-  										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'te'
-  						  		    	}
-  						  				]
-                                        {
-  						  				highlight_label: 'ON',
-  						  				rows: [
-  						  					{
-  						  		    		header: 'قسم الادمن',
-  										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'te'
-  						  		    	}
-  						  				]
-                                        {
-  						  				highlight_label: 'ON',
-  						  				rows: [
-  						  					{
-  						  		    		header: 'قسم الادمن',
-  										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'te'
+  								    		  id: 'سفروت2'
   						  		    	}
   						  				]
   						  			}
@@ -142,8 +83,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                               {
                                   name: 'cta_url',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: '⌝كـل الـلـي يـخـصـنـي⌞',
-                                      url: 'https://www.atom.bio/m_vro1',
+                                      display_text: 'منصاتي🤺🔥',
+                                      url: 'https://www.atom.bio/safrotbob-376',
                                       merchant_url: ''
                                   })
                               },
