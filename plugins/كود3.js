@@ -135,11 +135,45 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   								    		  id: '.المطور'
   						  		    	}
   						  				]
+                                        },
+  						  			{
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
+  										      title: '',
+  									    	  description: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
+  								    		  id: '.المطور'
+  						  		    	}
+  						  				]
+                                        },
+  						  			{
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
+  										      title: '',
+  									    	  description: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
+  								    		  id: '.المطور'
+  						  		    	}
+  						  				]
   						  			}
   						  		]
   						  	})
   							},
                               {
+                                  name: 'quick_reply',
+                                  buttonParamsJson: JSON.stringify({
+                                      display_text: 'quick_reply',
+                                      id: `message`
+                                  })
+                                  {
+                                  name: 'quick_reply',
+                                  buttonParamsJson: JSON.stringify({
+                                      display_text: 'quick_reply',
+                                      id: `message`
+                                  })
+                                      {
                                   name: 'quick_reply',
                                   buttonParamsJson: JSON.stringify({
                                       display_text: 'quick_reply',
