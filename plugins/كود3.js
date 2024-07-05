@@ -1,3 +1,5 @@
+نص الملف قائمة الاوامر بالازرار.js:
+
 //Copyright ©JOANIMI/KILLUA
 //https://whatsapp.com/channel/0029Vab5oDNElagpHtJjmT0B
 
@@ -10,10 +12,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     if (device !== 'desktop' || device !== 'web') {      
         var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/b63528315a84c3205ed98.jpg'}}, { upload: conn.waUploadToServer })
         const interactiveMessage = {
-            body: { text: `test`.trim() },
-            footer: { text: `𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩`.trim() },  
+            body: { text: ``.trim() },
+            footer: { text: `*𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩*`.trim() },  
             header: {
-                title: `*┃━━━━━⬣♯ЅᗩFᏒOT꙯-𝙱𝙾𝚃⬣━━━━━┃*\n\n*◞❐نورت يا حب بوت سفروت🤺🔥*\n\n*◞❐ تفضل القائمة يا  :* @${mentionId.split('@')[0]}`,
+                title: `*⎔⋅• ┏╼╃✦⊰⟦♯ЅᗩFᏒOT꙯⟧⊱✦╄╾┓ •⋅⎔*\n\n*◞❐نورت يا حب بوت سفروت🤺🔥*\n\n*◞❐ تفضل القائمة يا  :* @${mentionId.split('@')[0]}\n\n*◞❐اسم البوت : بوت سفروت*\n\n*◞❐موقع التنصيب : heroku*\n\n*◞❐البوت يعمل في الخاص والجروبات*\n\n*◞❐يمنع شتم البوت*\n\n*⎔⋅• ┗╼╃✦⊰⟦♯ЅᗩFᏒOT꙯⟧⊱✦╄╾┛ •⋅⎔*`,
                 subtitle: ``,
                 hasMediaAttachment: true,
                 imageMessage: joanimiimg.imageMessage,
@@ -30,10 +32,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   							  	    highlight_label: 'ON',
   						  		    rows: [
   						  		    	{
-  						  		    		header: '◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝',
-  										      title: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩',
-  									    	  description: '◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝',
-  								    		  id: '.سفروت1'
+  						  		    		header: 'Test',
+  										      title: 'Click Me',
+  									    	  description: 'Click Me',
+  								    		  id: 'test'
   						  		    	}
   						  		    ]
   						  			},
@@ -41,10 +43,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎',
-  										      title: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩',
-  									    	  description: '🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎',
-  								    		  id: '.سفروت2'
+  						  		    		header: 'Test',
+  										      title: 'Click Me',
+  									    	  description: 'Click Me',
+  								    		  id: 'tes'
   						  		    	}
   						  				]
   						        	},
@@ -52,10 +54,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿',
-  								    		  id: '.سفروت3'
+  									    	  description: 'ما',
+  								    		  id: 'سفروت1'
   						  		    	}
   						  				]
                                     },
@@ -63,10 +65,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝',
-  								    		  id: '.سفروت4'
+  									    	  description: 'مارو1',
+  								    		  id: 'سفروت2'
   						  		    	}
   						  				]
                                         },
@@ -74,10 +76,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️',
-  								    		  id: '.سفروت5'
+  									    	  description: 'مارو1',
+  								    		  id: 'سفروت2'
   						  		    	}
   						  				]
                                         },
@@ -85,10 +87,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃',
-  								    		  id: '.سفروت6'
+  									    	  description: 'مارو1',
+  								    		  id: 'سفروت2'
   						  		    	}
   						  				]
                                         },
@@ -96,10 +98,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '◡̈⃝💆🏻❏━━│قسم الايدت│━━❏◡̈⃝💆🏻',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '◡̈⃝💆🏻❏━━│قسم الايدت│━━❏◡̈⃝💆🏻',
-  								    		  id: '.سفروت7'
+  									    	  description: 'مارو1',
+  								    		  id: 'سفروت2'
   						  		    	}
   						  				]
                                         },
@@ -107,10 +109,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '🏦❏━━│قسم البنك│━━❏◡̈⃝🏦',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '🏦❏━━│قسم البنك│━━❏◡̈⃝🏦',
-  								    		  id: '.سفروت8'
+  									    	  description: 'مارو1',
+  								    		  id: 'سفروت2'
   						  		    	}
   						  				]
                                         },
@@ -118,43 +120,30 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '◡̈⃝🤴🏻❏━━│قسم المطوࢪ│━━❏◡̈⃝🧏🏻',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '◡̈⃝🤴🏻❏━━│قسم المطوࢪ│━━❏◡̈⃝🧏🏻',
-  								    		  id: '.سفروت9'
+  									    	  description: 'مارو1',
+  								    		  id: 'سفروت2'
   						  		    	}
-  						  				]
-                                        },
-  						  			{
+ 	                           		{
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
-  								    		  id: '.المطور'
+  									    	  description: 'مارو1',
+  								    		  id: 'سفروت2'
   						  		    	}
   						  				]
-                                        },
-  						  			{
+  						  				]
+ 		                           	{
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
+  						  		    		header: 'قسم الادمن',
   										      title: '',
-  									    	  description: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
-  								    		  id: '.المطور'
-  						  		    	}
-  						  				]
-                                        },
-  						  			{
-  						  				highlight_label: 'ON',
-  						  				rows: [
-  						  					{
-  						  		    		header: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
-  										      title: '',
-  									    	  description: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
-  								    		  id: '.المطور'
+  									    	  description: 'مارو1',
+  								    		  id: 'سفروت2'
   						  		    	}
   						  				]
   						  			}
@@ -167,24 +156,12 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                       display_text: 'quick_reply',
                                       id: `message`
                                   })
-                                  {
-                                  name: 'quick_reply',
-                                  buttonParamsJson: JSON.stringify({
-                                      display_text: 'quick_reply',
-                                      id: `message`
-                                  })
-                                      {
-                                  name: 'quick_reply',
-                                  buttonParamsJson: JSON.stringify({
-                                      display_text: 'quick_reply',
-                                      id: `message`
-                                  })
                               },
                               {
                                   name: 'cta_url',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: 'منصاتي🤺🔥',
-                                      url: 'https://www.atom.bio/safrotbob-376',
+                                      display_text: '',
+                                      url: 'https://www.atom.bio/m_vro',
                                       merchant_url: ''
                                   })
                               },
