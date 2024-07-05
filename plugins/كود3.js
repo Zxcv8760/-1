@@ -1,5 +1,3 @@
-نص الملف قائمة الاوامر بالازرار.js:
-
 //Copyright ©JOANIMI/KILLUA
 //https://whatsapp.com/channel/0029Vab5oDNElagpHtJjmT0B
 
@@ -12,10 +10,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     if (device !== 'desktop' || device !== 'web') {      
         var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/b63528315a84c3205ed98.jpg'}}, { upload: conn.waUploadToServer })
         const interactiveMessage = {
-            body: { text: ``.trim() },
-            footer: { text: `*𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩*`.trim() },  
+            body: { text: `test`.trim() },
+            footer: { text: `𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩`.trim() },  
             header: {
-                title: `*⎔⋅• ┏╼╃✦⊰⟦♯ЅᗩFᏒOT꙯⟧⊱✦╄╾┓ •⋅⎔*\n\n*◞❐نورت يا حب بوت سفروت🤺🔥*\n\n*◞❐ تفضل القائمة يا  :* @${mentionId.split('@')[0]}\n\n*◞❐اسم البوت : بوت سفروت*\n\n*◞❐موقع التنصيب : heroku*\n\n*◞❐البوت يعمل في الخاص والجروبات*\n\n*◞❐يمنع شتم البوت*\n\n*⎔⋅• ┗╼╃✦⊰⟦♯ЅᗩFᏒOT꙯⟧⊱✦╄╾┛ •⋅⎔*`,
+                title: `*┃━━━━━⬣♯ЅᗩFᏒOT꙯⬣━━━━━┃*\n\n*◞❐نورت يا حب بوت سفروت🤺🔥*\n\n*◞❐ تفضل القائمة يا  :* @${mentionId.split('@')[0]}`,
                 subtitle: ``,
                 hasMediaAttachment: true,
                 imageMessage: joanimiimg.imageMessage,
@@ -32,10 +30,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   							  	    highlight_label: 'ON',
   						  		    rows: [
   						  		    	{
-  						  		    		header: 'Test',
-  										      title: 'Click Me',
-  									    	  description: 'Click Me',
-  								    		  id: 'test'
+  						  		    		header: '◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝',
+  										      title: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩',
+  									    	  description: '◡̈⃝˼‏📖˹ ━━|قسم الادمن│━━˼‏📖˹◡̈⃝',
+  								    		  id: '.سفروت1'
   						  		    	}
   						  		    ]
   						  			},
@@ -43,10 +41,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'Test',
-  										      title: 'Click Me',
-  									    	  description: 'Click Me',
-  								    		  id: 'tes'
+  						  		    		header: '🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎',
+  										      title: '𝙏𝙝𝙚𝙎𝙖𝙛𝙧𝙤𝙩𝘽𝙤𝙩',
+  									    	  description: '🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎',
+  								    		  id: '.سفروت2'
   						  		    	}
   						  				]
   						        	},
@@ -54,10 +52,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿',
   										      title: '',
-  									    	  description: 'ما',
-  								    		  id: 'سفروت1'
+  									    	  description: '🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿',
+  								    		  id: '.سفروت3'
   						  		    	}
   						  				]
                                     },
@@ -65,10 +63,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝',
   										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'سفروت2'
+  									    	  description: '◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝',
+  								    		  id: '.سفروت4'
   						  		    	}
   						  				]
                                         },
@@ -76,10 +74,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️',
   										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'سفروت2'
+  									    	  description: '⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️',
+  								    		  id: '.سفروت5'
   						  		    	}
   						  				]
                                         },
@@ -87,10 +85,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃',
   										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'سفروت2'
+  									    	  description: '🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃',
+  								    		  id: '.سفروت6'
   						  		    	}
   						  				]
                                         },
@@ -98,10 +96,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '◡̈⃝💆🏻❏━━│قسم الايدت│━━❏◡̈⃝💆🏻',
   										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'سفروت2'
+  									    	  description: '◡̈⃝💆🏻❏━━│قسم الايدت│━━❏◡̈⃝💆🏻',
+  								    		  id: '.سفروت7'
   						  		    	}
   						  				]
                                         },
@@ -109,10 +107,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '🏦❏━━│قسم البنك│━━❏◡̈⃝🏦',
   										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'سفروت2'
+  									    	  description: '🏦❏━━│قسم البنك│━━❏◡̈⃝🏦',
+  								    		  id: '.سفروت8'
   						  		    	}
   						  				]
                                         },
@@ -120,30 +118,31 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '◡̈⃝🤴🏻❏━━│قسم المطوࢪ│━━❏◡̈⃝🧏🏻',
   										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'سفروت2'
-  						  		    	}
- 	                           		{
+  									    	  description: '◡̈⃝🤴🏻❏━━│قسم المطوࢪ│━━❏◡̈⃝🧏🏻',
+  								    		  id: '.سفروت9'
+  							    	}
+                                       },
+  						  			{
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '◡̈⃝🤴🏻❏━━│قسم المطوࢪ│━━❏◡̈⃝🧏🏻',
   										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'سفروت2'
-  						  		    	}
+  									    	  description: '◡̈⃝🤴🏻❏━━│قسم المطوࢪ│━━❏◡̈⃝🧏🏻',
+  								    		  id: '.سفروت9'
+                                    }
   						  				]
-  						  				]
- 		                           	{
+                                        },
+  						  			{
   						  				highlight_label: 'ON',
   						  				rows: [
   						  					{
-  						  		    		header: 'قسم الادمن',
+  						  		    		header: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
   										      title: '',
-  									    	  description: 'مارو1',
-  								    		  id: 'سفروت2'
+  									    	  description: '◡̈⃝🤴🏻❏━━│مطوري|━━❏◡̈⃝👑',
+  								    		  id: '.المطور'
   						  		    	}
   						  				]
   						  			}
@@ -160,8 +159,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                               {
                                   name: 'cta_url',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: '',
-                                      url: 'https://www.atom.bio/m_vro',
+                                      display_text: 'منصاتي🤺🔥',
+                                      url: 'https://www.atom.bio/safrotbob-376',
                                       merchant_url: ''
                                   })
                               },
