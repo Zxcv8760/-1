@@ -1,86 +1,104 @@
+import axios from 'axios'
+import fetch from 'node-fetch'
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
+import search from 'yt-search'
+async function spotifyxv(query) {
+let token = await tokens();
+let response = await axios({
+method: 'get',
+url: 'https://api.spotify.com/v1/search?q=' + encodeURIComponent(query) + '&type=track',
+headers: {
+Authorization: 'Bearer ' + token,
+},
+})
+const tracks = response.data.tracks.items
+const results = tracks.map((track) => ({
+name: track.name,
+artista: track.artists.map((artist) => artist.name),
+album: track.album.name,
+duracion: timestamp(track.duration_ms),
+url: track.external_urls.spotify,
+imagen: track.album.images.length ? track.album.images[0].url : '',
+}))
+return results
+}
+async function tokens() {
+const response = await axios({
+method: 'post',
+url:
+'https://accounts.spotify.com/api/token',
+headers: {
+'Content-Type': 'application/x-www-form-urlencoded',
+Authorization: 'Basic ' + Buffer.from('acc6302297e040aeb6e4ac1fbdfd62c3:0e8439a1280a43aba9a5bc0a16f3f009').toString('base64'),
+},
+data: 'grant_type=client_credentials',
+})
+return response.data.access_token
+}
+function timestamp(time) {
+const minutes = Math.floor(time / 60000);
+const seconds = Math.floor((time % 60000) / 1000);
+return minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+}
+async function getBuffer(url, options) {
+try {
+options = options || {};
+const res = await axios({
+method: 'get',
+url,
+headers: {
+DNT: 1,
+'Upgrade-Insecure-Request': 1,
+},
+...options,
+responseType: 'arraybuffer',
+});
+return res.data;
+} catch (err) {
+return err;
+}}
+async function getTinyURL(text) {
+try {
+let response = await axios.get(`https://tinyurl.com/api-create.php?url=${text}`);
+return response.data;
+} catch (error) {
+return text;
+}}
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+if (!text) throw `${lenguajeGB.smsMalused2()} ⊱ *${usedPrefix + command} Bellyache*`
+try {
+m.react('⌛️')
+let songInfo = await spotifyxv(text)
+if (!songInfo.length) throw `*No se encontró una canción.*`
+let res = songInfo[0]
+let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
+let shortURL = await getTinyURL(res.url)
+const info = `✨ *${mid.smsYT1}:*
+_${res.name}_
 
-import ytdl from 'ytdl-core';
-import yts from 'yt-search';
-import fs from 'fs';
-import { pipeline } from 'stream';
-import { promisify } from 'util';
-import os from 'os';
+🗣️ *${mid.smsYT13}:*
+» _${res.artista.join(', ')}_
 
-const streamPipeline = promisify(pipeline);
+🌐 *${mid.smsYT4}*:
+» _${shortURL}_
 
-var handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `*${usedPrefix}${command} اية الكرسي*`;
+🎶 *${mid.smsSpoti}*
+${wm}`
 
-  let search = await yts(text);
-  let vid = search.videos[Math.floor(Math.random() * search.videos.length)];
-  if (!search) throw 'Video Not Found, Try Another Title';
-  let { title, thumbnail, timestamp, views, ago, url } = vid;
-  let wm = 'Downloading audio please wait';
-
-  let captvid = `*❖───┊ ◡̈⃝♪ يــوتـــيــوب ◡̈⃝♪ ┊───❖*
-  ❏ الـعـنوان: ${title}
-
-  ❐ الـمده: ${timestamp}
-
-  ❑ الــمـشهـدات: ${views}
-
-  ❒ مـنذ: ${ago}
-
-  ❒ الـرابــط: ${url}`;
-
-  conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: captvid, footer: author }, { quoted: m });
-
-
-  const audioStream = ytdl(url, {
-    filter: 'audioonly',
-    quality: 'highestaudio',
-  });
-
-  // Get the path to the system's temporary directory
-  const tmpDir = os.tmpdir();
-
-  // Create writable stream in the temporary directory
-  const writableStream = fs.createWriteStream(`${tmpDir}/${title}.mp3`);
-
-  // Start the download
-  await streamPipeline(audioStream, writableStream);
-
-  let doc = {
-    audio: {
-      url: `${tmpDir}/${title}.mp3`
-    },
-    mimetype: 'audio/mp4',
-    fileName: `${title}`,
-    contextInfo: {
-      externalAdReply: {
-        showAdAttribution: true,
-        mediaType: 2,
-        mediaUrl: url,
-        title: title,
-        body: wm,
-        sourceUrl: url,
-        thumbnail: await (await conn.getFile(thumbnail)).data
-      }
-    }
-  };
-
-  await conn.sendMessage(m.chat, doc, { quoted: m });
-
-  // Delete the audio file
-  fs.unlink(`${tmpDir}/${title}.mp3`, (err) => {
-    if (err) {
-      console.error(`Failed to delete audio file: ${err}`);
-    } else {
-      console.log(`Deleted audio file: ${tmpDir}/${title}.mp3`);
-    }
-  });
-};
-
-handler.help = ['play'].map((v) => v + ' <query>');
-handler.tags = ['downloader'];
-handler.command = /^شغل$/i;
-
-handler.exp = 0;
-handler.diamond = false;
-
-export default handler;
+let resImg = await fetch(res.imagen)
+let thumbb = await resImg.buffer()
+let { videos } = await search(res.name)
+let q = '128kbps'
+let v = videos[0].url
+let yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v))
+let dl_url = await yt.audio[q].download()
+let ttl = await yt.title
+let size = await yt.audio[q].fileSizeH
+let img = await getBuffer(res.imagen)
+conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
+await conn.sendMessage(m.chat, {text: info, contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": shortURL, "sourceUrl": shortURL}}}, {quoted: m});
+m.react('✅️')
+} catch (error) {
+}}
+handler.command = /^(spotify|شغل)$/i
+export default handler
